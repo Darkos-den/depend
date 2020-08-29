@@ -6,9 +6,9 @@ val Project.android: BaseExtension
         ?: error("Project '$name' is not an Android module")
 
 fun Project.androidApplicationConfig(
-    appId: String = Versions.Project.applicationId,
-    appVersionCode: Int = Versions.Project.versionCodeValue,
-    appVersionName: String = Versions.Project.versionNameValue
+    appId: String = "com.darkos.depend",
+    appVersionCode: Int = 1,
+    appVersionName: String = "0.0.1"
 ) {
     android.run {
         defaultConfig {

@@ -19,6 +19,7 @@ repositories {
     google()
     jcenter()
     maven(url = "https://plugins.gradle.org/m2/")
+    maven(url = "https://jitpack.io")
 }
 
 val compileKotlin: org.jetbrains.kotlin.gradle.tasks.KotlinCompile by tasks
@@ -29,4 +30,5 @@ compileKotlin.kotlinOptions {
 dependencies {
     implementation("com.android.tools.build:gradle:${gradleVersion}")
     implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlinVersion}")
+    api("com.github.Darkos-den:depend:0.0.1")
 }
