@@ -15,6 +15,7 @@ buildscript {
         classpath(Libs.AndroidGradle.GRADLE.full)
         classpath(Libs.Detekt.GRADLE.full)
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
+        classpath("com.github.dcendents:android-maven-gradle-plugin:2.1")
     }
 }
 

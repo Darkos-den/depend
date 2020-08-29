@@ -3,7 +3,10 @@ val gradleVersion = "4.2.0-alpha08"
 
 plugins {
     `kotlin-dsl`
+    id("com.github.dcendents.android-maven")
 }
+
+group = "com.github.Darkos-den"
 
 dependencies {
     implementation("com.android.tools.build:gradle:${gradleVersion}")
