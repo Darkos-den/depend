@@ -6,6 +6,8 @@ object Versions {
     var detekt = "1.10.0-RC1"
     var gradle = "4.2.0-alpha08"
     var material = "1.2.0"
+    var glide = "4.11.0"
+    var kodein = "6.5.5"
 
     object AndroidX {
         var activity = "1.2.0-alpha05"

@@ -16,6 +16,16 @@ object Libs {
             Versions.kotlin
     }
 
+    enum class Glide(
+        override val depend: String
+    ) : IDepend {
+        CORE("com.github.bumptech.glide:glide"),
+        COMPILER("com.github.bumptech.glide:compiler");
+
+        override val version =
+            Versions.glide
+    }
+
     enum class Ktor(
         override val depend: String
     ) : IDepend {
@@ -145,6 +155,29 @@ object Libs {
                 }.toTypedArray()
             }
 
+        }
+    }
+
+    enum class Kodein(
+        override val depend: String
+    ) : IDepend {
+        JVM("org.kodein.di:kodein-di-generic-jvm"),
+        ANDROID("org.kodein.di:kodein-di-framework-android-x"),
+        ERASED("org.kodein.di:kodein-di-erased");
+
+        override val version =
+            Versions.kodein
+
+        companion object {
+            val defaultAndroid = listOf(
+                implementation(JVM),
+                implementation(ANDROID)
+            ).toTypedArray()
+
+            val defaultCommon = listOf(
+                implementation(JVM),
+                implementation(ERASED)
+            ).toTypedArray()
         }
     }
 }
