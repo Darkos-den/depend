@@ -97,6 +97,11 @@ object Libs {
 
     }
 
+    val material = object: IDepend{
+        override val depend = "com.google.android.material:material"
+        override val version = Versions.material
+    }
+
     object AndroidX{
         enum class Activity(
             override val depend: String

@@ -8,6 +8,12 @@ fun depend(block: () -> Pair<String, IDepend>): Depend {
     }
 }
 
+fun stringDepend(block: () -> Pair<String, String>): Depend {
+    return block.invoke().let {
+        Depend(it.first, it.second)
+    }
+}
+
 fun implementation(depend: IDepend): Depend {
     return Depend("implementation", depend)
 }

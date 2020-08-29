@@ -97,7 +97,12 @@ object Libs {
 
     }
 
-    object AndroidX{
+    val material = object : IDepend {
+        override val depend = "com.google.android.material:material"
+        override val version = Versions.material
+    }
+
+    object AndroidX {
         enum class Activity(
             override val depend: String
         ) : IDepend {
@@ -107,6 +112,7 @@ object Libs {
                 get() = Versions.AndroidX.activity
 
         }
+
         enum class AppCompat(
             override val depend: String
         ) : IDepend {
@@ -116,6 +122,7 @@ object Libs {
                 get() = Versions.AndroidX.appCompat
 
         }
+
         enum class Compose(
             override val depend: String
         ) : IDepend {
@@ -132,7 +139,7 @@ object Libs {
             override val version: String
                 get() = Versions.AndroidX.compose
 
-            companion object{
+            companion object {
                 val all = values().map {
                     implementation(it)
                 }.toTypedArray()

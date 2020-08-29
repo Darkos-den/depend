@@ -1,7 +1,7 @@
 object Versions {
 
     object Project {
-        const val applicationId = "com.company.projectName"
+        const val applicationId = "com.darkos.depend"
 
         private const val patch = 1
         private const val minor = 0
@@ -17,6 +17,7 @@ object Versions {
     const val serialization = "0.20.0"
     const val detekt = "1.10.0-RC1"
     const val gradle = "4.2.0-alpha08"
+    const val material = "1.2.0"
 
     object AndroidX{
         const val activity = "1.2.0-alpha05"
