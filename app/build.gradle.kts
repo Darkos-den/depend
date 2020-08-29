@@ -1,3 +1,4 @@
+import com.darkos.depend.Depend
 import com.darkos.depend.applyDependencies
 import com.darkos.depend.implementation
 
@@ -7,7 +8,7 @@ plugins {
     id("app-config-android")
 }
 
-val deps: List<com.darkos.depend.Depend> = listOf(
+val dependencyList: List<Depend> = listOf(
     implementation(Libs.Kotlin.STDLIB),
     implementation(Libs.AndroidX.Activity.KTX),
     implementation(Libs.AndroidX.AppCompat.CORE),
@@ -19,5 +20,5 @@ val deps: List<com.darkos.depend.Depend> = listOf(
 androidApplicationConfig()
 
 dependencies {
-    applyDependencies(deps)
+    applyDependencies(dependencyList)
 }
