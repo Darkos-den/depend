@@ -80,6 +80,8 @@ object Libs {
     ) : IDepend {
         COMMON("org.jetbrains.kotlinx:kotlinx-serialization-runtime-common"),
         RUNTIME("org.jetbrains.kotlinx:kotlinx-serialization-runtime"),
+        CORE("org.jetbrains.kotlinx:kotlinx-serialization-core"),
+        PROTOBUF("org.jetbrains.kotlinx:kotlinx-serialization-protobuf"),
         NATIVE("org.jetbrains.kotlinx:kotlinx-serialization-runtime-native");
 
         override val version: String
