@@ -138,15 +138,13 @@ object Libs {
         enum class Compose(
             override val depend: String
         ) : IDepend {
-            CORE("androidx.ui:ui-core"),
-            RUNTIME("androidx.compose:compose-runtime"),
-            FOUNDATION("androidx.ui:ui-foundation"),
-            LAYOUT("androidx.ui:ui-layout"),
-            ANIMATION("androidx.ui:ui-animation"),
-            MATERIAL("androidx.ui:ui-material"),
-            MATERIAL_EXTENDED("androidx.ui:ui-material-icons-extended"),
-            TOOLING("androidx.ui:ui-tooling"),
-            LIVE_DATA("androidx.ui:ui-livedata");
+            UI("androidx.compose.ui:ui"),
+            ANIMATION("androidx.compose.animation:animation"),
+            FOUNDATION("androidx.compose.foundation:foundation"),
+            MATERIAL("androidx.compose.material:material"),
+            RUNTIME("androidx.compose.runtime:runtime"),
+            RUNTIME_LIVEDATA("androidx.compose.runtime:runtime-livedata"),
+            TOOLING("androidx.ui:ui-tooling");
 
             override val version: String
                 get() = Versions.AndroidX.compose

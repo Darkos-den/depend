@@ -12,7 +12,7 @@ object Versions {
     object AndroidX {
         var activity = "1.2.0-alpha08"
         var appCompat = "1.1.0"
-        var compose = "0.1.0-dev13"
-        var composeCompiler = "1.3.70-dev-withExperimentalGoogleExtensions-20200424"
+        var compose = "1.0.0-alpha02"
+        var composeCompiler = "1.4.0"
     }
 }
