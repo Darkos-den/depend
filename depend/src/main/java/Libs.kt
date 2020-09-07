@@ -139,6 +139,8 @@ object Libs {
             override val depend: String
         ) : IDepend {
             UI("androidx.compose.ui:ui"),
+            UI_UNIT("androidx.compose.ui.unit"),
+            UI_GRAPHICS("androidx.compose.ui.graphics"),
             ANIMATION("androidx.compose.animation:animation"),
             FOUNDATION("androidx.compose.foundation:foundation"),
             MATERIAL("androidx.compose.material:material"),
