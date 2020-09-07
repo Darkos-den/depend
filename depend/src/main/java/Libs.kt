@@ -142,6 +142,8 @@ object Libs {
             ANIMATION("androidx.compose.animation:animation"),
             FOUNDATION("androidx.compose.foundation:foundation"),
             MATERIAL("androidx.compose.material:material"),
+            MATERIAL_ICONS_CORE("androidx.compose.material:material-icons-core"),
+            MATERIAL_ICONS_EXTENDED("androidx.compose.material:material-icons-extended"),
             RUNTIME("androidx.compose.runtime:runtime"),
             RUNTIME_LIVEDATA("androidx.compose.runtime:runtime-livedata"),
             TOOLING("androidx.ui:ui-tooling");
