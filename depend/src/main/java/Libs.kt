@@ -70,6 +70,10 @@ object Libs {
          */
         SERIALIZATION_JVM("io.ktor:ktor-client-serialization-jvm"),
 
+        JSON("io.ktor:ktor-client-json"),
+
+        JSON_JVM("io.ktor:ktor-client-json-jvm"),
+
         /**
          * io.ktor:ktor-client-serialization-native
          */
