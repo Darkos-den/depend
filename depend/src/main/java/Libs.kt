@@ -254,16 +254,6 @@ object Libs {
             UI("androidx.compose.ui:ui"),
 
             /**
-             * androidx.compose.ui.unit
-             */
-            UI_UNIT("androidx.compose.ui.unit"),
-
-            /**
-             * androidx.compose.ui.graphics
-             */
-            UI_GRAPHICS("androidx.compose.ui.graphics"),
-
-            /**
              * androidx.compose.animation:animation
              */
             ANIMATION("androidx.compose.animation:animation"),
