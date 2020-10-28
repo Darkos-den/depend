@@ -12,7 +12,7 @@ object Versions {
     /**
      * 1.3.7
      */
-    var coroutines = "1.3.7"
+    var coroutines = "1.4.0"
 
     /**
      * 1.0.0-RC
@@ -25,9 +25,9 @@ object Versions {
     var detekt = "1.12.0"
 
     /**
-     * 4.2.0-alpha08
+     * 4.2.0-alpha15
      */
-    var gradle = "4.2.0-alpha08"
+    var gradle = "4.2.0-alpha15"
 
     /**
      * 1.2.0
@@ -56,9 +56,9 @@ object Versions {
         var appCompat = "1.1.0"
 
         /**
-         * 1.0.0-alpha02
+         * 1.0.0-alpha05
          */
-        var compose = "1.0.0-alpha02"
+        var compose = "1.0.0-alpha05"
 
         /**
          * 1.4.0
